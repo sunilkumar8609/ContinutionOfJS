@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var x = myFunction();
+function myFunction()
+{
+    return this;
+}
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+<!-- this is the global object in the window-->

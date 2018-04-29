@@ -1,0 +1,23 @@
+<h2>JavaScript Functions</h2>
+<p id="demo"></p>
+<script>
+var person = 
+{
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function() 
+    {
+        return this.firstName + " " + this.lastName;
+    }
+}
+var myObject = 
+{
+    firstName:"BizRun",
+    lastName: "time",
+}
+x = person.fullName.apply(myObject); 
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>

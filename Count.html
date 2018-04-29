@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button type="button" onclick="myFunction()">Count!</button>
+<p id="demo">0</p>
+<script>
+var counter = 0;
+function add()
+{
+    return counter += 1;
+}
+
+function myFunction()
+{
+    document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+</body>
+</html>
+<!--if we use var counter = 0; as local variable it will count only one time 

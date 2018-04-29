@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+ <body>
+ <p>create and using an object methos.</p>
+ <p>an object methos is a function definition, stored as a property value </p>
+ <p id="demo"></p>
+ <script>
+ var person = {
+	 firstName: "sunil",
+	 lastName : "kumar",
+	 id : 5566,
+	 fullName :function(){
+		 return this.firstName +" "+ this.lastName;
+	 }
+ };
+ document.getElementById("demo").innerHTML = person.fullName();
+ </script> 
+ </body>
+</html>

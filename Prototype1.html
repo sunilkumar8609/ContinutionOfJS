@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+ <body>
+
+  <p id="demo"></p>
+
+  <script>
+  function Person(first, last, age, add) {
+	  this.firstName = first;
+	  this.lastName = last;
+	  this.age = age;
+	  this.address= add;
+  }
+  Person.prototype.name = function(){
+	  return this.firstName + " " +this.lastName};
+  var myFather = new Person("shiva", "prasad", 50 ,"banagalore");
+  var myMother = new Person("radha", "bai", 48,"Banagalore");
+  document.getElementById("demo").innerHTML="Myfather is " +myFather.name() + "  "+ "My Mother name is " +myMother.name();
+  </script>
+ </body>
+</html>
